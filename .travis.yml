@@ -1,7 +1,10 @@
+os: linux
+dist: bionic
 language: python
-matrix:
+jobs:
   include:
     - env: TOX_ENV=lint
+    - python: 3.8
     - python: 3.7
       dist: xenial
     - python: 3.6
